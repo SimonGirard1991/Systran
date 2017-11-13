@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Systran</title>
+	
+	 <!-- Latest compiled and minified CSS for Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript for Bootstrap-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<!-- JavaScript file-->
+	<script src="js/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class='container'>
+		<div class="jumbotron">
+			<h1>Systran</h1>
+		</div>		
+		<div class="controls">
+	        <select id="source">
+	            <option value="en" data-t selected>English</option>
+	            <option value="fr" data-t selected>French</option>
+	            <option value="ru" data-t>Russian</option>
+	            <option value="ja" data-t>Japanese</option>
+	            <option value="ko" data-t>Korean</option>
+	            <option value="zh" data-t>Chinese</option>
+	            <option value="es" data-t>Spanish</option>
+	            <option value="ar" data-t>Arabic</option>
+	        </select>
+	        <select id="target">
+	            <option value="fr" data-t selected>French</option>
+	            <option value="ru" data-t>Russian</option>
+	            <option value="ja" data-t>Japanese</option>
+	            <option value="ko" data-t>Korean</option>
+	            <option value="zh" data-t>Chinese</option>
+	            <option value="es" data-t>Spanish</option>
+	            <option value="ar" data-t>Arabic</option>
+	            <option value="en" data-t>English</option>
+	        </select>
+	        <button type="button" id="translateButton" data-t>Translate</button>
+	        <div id="translating" class="hidden" data-t>Translating...</div>
+	    </div>
+	    <table id="translationBox">
+	        <tr>
+	            <td id="inputBox">
+	                <div id="inputTextEditor" contenteditable="true" class="textEditor">
+	                </div>
+	            </td>
+	            <td id="outputBox">
+	                <div id="outputTextEditor" class="textEditor">
+	                </div>
+	            </td>
+	        </tr>
+	    </table>
+	</div>	
+</body>
+</html>

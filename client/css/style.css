@@ -1,0 +1,115 @@
+*{
+	box-sizing:border-box;
+}
+.jumbotron{
+    background-color:#2C3E50!important;
+}
+.jumbotron h1{
+	color:#ffffff;
+}
+
+html, body{height:100%; margin:0;padding:0}
+ 
+.row
+{
+	border-radius: 5px;
+	padding : 5px 3px;
+	margin: 0;
+}
+
+.row label{
+	color:#ECF0F1;
+}
+
+.well {
+	background: #2980B9;
+}
+.well label{
+	color:#ECF0F1;
+}
+
+#abc {
+	height: 80px;
+	background-color:#E74C3C;
+	text-align:center;
+    vertical-align: middle;
+}
+#abc1 {
+	height: 80px;
+	background-color:#E74C3C;
+	text-align:center;
+    vertical-align: middle;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;}
+
+#abc2 {
+	height: 80px;
+	background-color:#E74C3C;
+	text-align:center;
+    vertical-align: middle;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+.button
+{
+	align-content: center;
+}
+label {
+	vertical-align: center;
+	display: inline-block;
+}
+
+input {
+	vertical-align: middle;
+	display: inline-block;
+}
+#source, #target, #translateButton {
+    height: 31px;
+    width: 90px;
+}
+
+#translationBox {
+    width: 100%;
+}
+
+#inputBox, #outputBox {
+    width: 50%;
+}
+
+.textEditor {
+    overflow: auto;
+    font-family: monospace;
+    font-size: 14px;
+    padding: 10px;
+    line-height: normal;
+    height: 100%;
+    min-height: 100px;
+    max-height: 400px;
+}
+
+#inputTextEditor {
+    margin-right: 2px;
+    border: 1px solid #ddd;
+}
+
+#outputTextEditor {
+    margin-left: 2px;
+    border: 1px solid whitesmoke;
+    background: whitesmoke;
+}
+
+#translating {
+    color: #428bca;
+    font-style: italic;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+#translating.hidden {
+    display:none;
+}
+
+.controls {
+    margin: 5px 20px 5px 2px;
+}
