@@ -61,7 +61,11 @@ jQuery(function($) {
     //Extract text to translate
     var toTranslate = getTextFromHtml($inputTextEditor.html());
 
-    if($source.val() != 'en' && $target.val() != 'en'){
+    if ($source.val() == $target.val()){
+      $translating.addClass('hidden');
+      $outputTextEditor.text(toTranslate);
+    }
+    else if($source.val() != 'en' && $target.val() != 'en'){
 
       translate($source.val(), 'en', toTranslate, function(err, result) {
 
@@ -82,9 +86,6 @@ jQuery(function($) {
           console.log('Error while doing translation: ' + err);
         }
       });
-    }
-    else if ($source.val() == $target.val()){
-      $outputTextEditor.text(toTranslate);
     }
     else{
       translate($source.val(), $target.val(), toTranslate, function(err, result) {
